@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button: ExtendedFloatingActionButton = findViewById(R.id.button)
+        val button: ExtendedFloatingActionButton = findViewById(R.id.fab)
 
         val viewPager2: ViewPager2 = findViewById(R.id.view_pager2)
         val viewPagerAdapter =
