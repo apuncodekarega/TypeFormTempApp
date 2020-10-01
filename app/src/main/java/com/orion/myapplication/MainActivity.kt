@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button: ExtendedFloatingActionButton = findViewById(R.id.fab)
+        val fab: ExtendedFloatingActionButton = findViewById(R.id.fab)
 
         val viewPager2: ViewPager2 = findViewById(R.id.view_pager2)
         val viewPagerAdapter =
@@ -26,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         viewPager2.orientation = ViewPager2.ORIENTATION_VERTICAL
         viewPager2.isUserInputEnabled=false
 
-        button.setOnClickListener {
+        fab.setOnClickListener {
             if (viewPager2.currentItem == 0) {
                 viewPager2.currentItem = 1
             } else if (viewPager2.currentItem == 1) {
                 viewPager2.currentItem = 2
-                button.text="Submit"
+                fab.text="Submit"
             }
 
         }
